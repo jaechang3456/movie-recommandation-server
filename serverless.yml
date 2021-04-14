@@ -6,7 +6,7 @@ frameworkVersion: '2'
 
 custom:
   wsgi:
-    app: app.app
+    app: app.py
 
 provider:
   name: aws
