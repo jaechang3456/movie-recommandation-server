@@ -30,7 +30,7 @@ api.add_resource(MovieResource, '/v1/movie/reviews/search','/v1/movie/reviews/ad
 api.add_resource(MovieRecommandResource, '/v1/movie/<int:user_id>/recommand')
 
 api.add_resource(UserRegister, '/v1/users')
-api.add_resource(UserLoginResource, '/v1/users/login', '/v1/users/<int:user_id>/my')
+api.add_resource(UserLoginResource, '/v1/users/login', '/v1/users/<int:user_id>/me')
 api.add_resource(UserLogoutResource, '/v1/users/logout')
 
 if __name__ == '__main__' :
