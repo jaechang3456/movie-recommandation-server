@@ -53,7 +53,7 @@ class UserRegister(Resource) :
             connection.commit()
 
             # 디비에 데이터를 저장한 후, 저장된 아이디값을 받아온다.
-            user_id = cursor.getlastrowid()
+            user_id = cursor.lastrowid
             print(user_id)
 
         except Error as e :
