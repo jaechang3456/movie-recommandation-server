@@ -94,7 +94,7 @@ class MovieSearchResource(Resource) :
 
         # 7. 클라이언트에 리스폰스 한다.
         if len(records) ==0 :
-            return {'message' : 'Title name error'}
+            return {'message' : 'Title name error'}, HTTPStatus.NOT_FOUND
         else :
             return {'ret':records}, HTTPStatus.OK
 
